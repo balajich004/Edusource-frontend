@@ -1,0 +1,113 @@
+/* Header container */
+.header-container {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 48px;
+    margin-right: 12px;
+}
+
+/* Auth Links */
+.auth-links {
+    display: flex;
+    align-items: center;
+}
+
+.login-link {
+    color: #4b5563;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.login-link:hover {
+    background-color: #f3f4f6;
+}
+
+.get-started-link {
+    background-color: #ea580c;
+    color: white;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.get-started-link:hover {
+    background-color: #d97706;
+}
+
+/* Menu */
+.menu {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        display: flex;
+    }
+}
+
+/* Menu List */
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap:1rem
+}
+
+.menu-item {
+    color: #4b5563;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.menu-item:hover {
+    color: #ea580c;
+    border-color: #ea580c;
+}
+
+.menu-item-active {
+    color: #ea580c;
+    border-color: #ea580c;
+}

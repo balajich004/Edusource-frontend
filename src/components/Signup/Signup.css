@@ -1,0 +1,71 @@
+.signup-container {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ea580c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.signup-form img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.signup-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+#username, #email, #phone, #password {
+    border: none;
+    background-color: gainsboro;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.signup-butt, .login-butt, .back-butt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-butt button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #ea580c;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.login-butt a, .back-butt a {
+    color: #ea580c;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.login-butt a:hover, .back-butt a:hover {
+    text-decoration: underline;
+}
