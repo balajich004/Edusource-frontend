@@ -5,6 +5,7 @@ import authp from "../../images/author.png"
 import book1 from "../../images/java-book.png"
 import book2 from "../../images/sql-book.png"
 import "../Books/Books.css"
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -15,7 +16,10 @@ function Home() {
           Explore the world through <span className='books'>Books</span>
         </div>
         <div className="home-sub-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem velit eaque, natus iure quo modi facere debitis nemo doloremque consequatur delectus dolores, esse ab cupiditate laudantium placeat maxime, vero officiis reprehenderit. Voluptatem eum impedit nam eligendi laboriosam soluta laborum maiores odit iusto!
+        A good book is like a conversation with the finest minds of the past and present. It captivates, enlightens, and enriches, leaving a lasting imprint on your heart. Discover the power of stories that transcend time and space.
+        </div>
+        <div className="home-sub-btn">
+          <button to="/books" className='hsb'>Explore now</button>
         </div>
       </div>
       <div className="home-logo">

@@ -1,9 +1,10 @@
 .book-container{
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 100vw;
 }
 .search-img{
     height: 100px;
-    width: 100px;
+    max-width: 100vw;
 }
 .search-img{
     position: relative;
@@ -26,8 +27,9 @@
     width: 200px;
 }
 .lob{
-    margin-top: 150px;
     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 .book{
     width:200px;
@@ -63,3 +65,62 @@
     display: flex;
     gap: 1rem;
 }
+.read-card{
+    display: none;
+}
+/***/
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Popup content styling */
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Close button hover effect */
+  .close-btn:hover {
+    background-color: darkred;
+  }
+  .btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .btnc button{
+    background-color: #ea580c;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }

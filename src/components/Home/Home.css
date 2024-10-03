@@ -15,6 +15,9 @@
 .home-text{
     padding: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
 }
 .home-sub-text{
     margin-top: 1rem;
@@ -63,4 +66,15 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     cursor: pointer;
+}
+.hsb{
+    background-color: #ea580c;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+Link{
+    text-decoration: none;
 }
