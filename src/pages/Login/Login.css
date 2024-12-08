@@ -1,0 +1,151 @@
+/* Container for the Login page */
+/* .auth-container {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: url('https://img.freepik.com/free-photo/top-view-books-with-copy-space_23-2148827187.jpg?t=st=1733117936~exp=1733121536~hmac=f5c9c608959da553dc98fd5b727c2758415e3a0a98b29dfd11f61eb598276a53&w=1380');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+} */
+
+.auth-container {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: url('https://img.freepik.com/free-photo/top-view-books-with-copy-space_23-2148827187.jpg?t=st=1733117936~exp=1733121536~hmac=f5c9c608959da553dc98fd5b727c2758415e3a0a98b29dfd11f61eb598276a53&w=1380');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+/* Styling for the form */
+.auth-form {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Image logo style */
+.auth-form img {
+    width: 160px;
+    margin-bottom: 1rem;
+    border-radius: 10%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.auth-form img:hover {
+    transform: scale(1.1);
+}
+
+/* Main heading */
+.auth-form h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Error message */
+.error-message {
+    color: #e11d48;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Form group label */
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f3f4f6;
+}
+
+/* Input hover effect */
+input:focus {
+    border-color: #ea580c;
+    background-color: #fff;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background-color: #ea580c;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #d45c0e;
+    transform: translateY(-3px);
+}
+
+/* Link text */
+.link-text {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.link-text a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link-text a:hover {
+    color: black;
+}
+
+/* Hover effects for the form and buttons */
+.auth-form:hover {
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in animation for error message */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

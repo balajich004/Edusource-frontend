@@ -1,0 +1,36 @@
+.pagination-nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pagination-ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    padding: 0;
+  }
+  
+  .pagination-li {
+    display: inline;
+  }
+  
+  .pagination-button {
+    background-color: #ea580c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .pagination-button:hover {
+    background-color: #d97706;
+  }
+  
+  .pagination-button.current-page {
+    background-color: #d97706;
+    font-weight: bold;
+  }
+  

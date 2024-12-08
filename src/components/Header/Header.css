@@ -1,0 +1,131 @@
+/* Container for Header */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #f8f9fa, #ea580c); /* Soft gradient */
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  
+  .home-text {
+    max-width: 600px;
+    z-index: 2;
+  }
+  
+  .home-main-text {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #2a2a2a;
+    text-align: left;
+    line-height: 1.3;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .home-sub-text {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #5a5a5a;
+    text-align: left;
+    line-height: 1.6;
+    animation: fadeInUp 1.5s ease-in-out 0.5s;
+  }
+  
+  .home-sub-btn {
+    margin-top: 30px;
+  }
+  
+  .explore-btn {
+    padding: 14px 40px;
+    background-color: #ea580c;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background-color: #cb5f21;
+    transform: translateY(-3px);
+  }
+  
+  .home-image {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .home-img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    animation: slideInLeft 1.5s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-header {
+      flex-direction: column;
+      padding: 60px 20px;
+      text-align: center;
+    }
+  
+    .home-text {
+      max-width: 100%;
+    }
+  
+    .home-main-text {
+      font-size: 2.2rem;
+    }
+  
+    .home-sub-text {
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+  
+    .home-img {
+      width: 100%;
+      max-width: 350px;
+      margin-top: 20px;
+    }
+  }
+  

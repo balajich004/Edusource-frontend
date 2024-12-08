@@ -1,0 +1,98 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #ea580c;
+}
+
+label {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+button {
+    background-color: #ea580c;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #d44e08;
+}
+
+.message {
+    text-align: center;
+    margin-top: 15px;
+    color: #ea580c;
+}
+
+.image-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.pdf-drop-area {
+    padding: 20px;
+    border: 2px dashed #ea580c;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.pdf-drop-area:hover {
+    background-color: #f7d8c1;
+}
+
+.pdf-drop-area p {
+    color: #ea580c;
+    margin-top: 10px;
+}
+
+/* Styles for form elements when focused */
+input:focus,
+textarea:focus {
+    border-color: #ea580c;
+    outline: none;
+}

@@ -1,0 +1,114 @@
+/* Container for ViewBooks component */
+.view-books {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.view-books h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Table container */
+.books-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header Styling */
+.books-table th {
+  background-color: #ea580c;
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Table Row Styling */
+.books-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f1f1f1;
+  text-align: left;
+}
+
+/* Table hover effect */
+.books-table tr:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+/* Styling for Book Image */
+.book-photo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Styling for empty book message */
+.view-books p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .view-books {
+      padding: 20px;
+      margin: 10px;
+  }
+
+  .books-table {
+      font-size: 0.9rem;
+  }
+
+  .books-table th, .books-table td {
+      padding: 10px 12px;
+  }
+
+  .book-photo {
+      width: 40px;
+      height: 40px;
+  }
+}
+
+/* Delete Button Styles */
+.delete-button {
+  background-color: #ea580c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #d45d09;
+}
+
+.delete-button:focus {
+  outline: none;
+}
